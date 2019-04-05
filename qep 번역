@@ -1,0 +1,106 @@
+A single track of slots patterns the periphery of an incremental encoder disk, as shown in Figure 34-1.These slots create an alternating pattern of dark and light lines. The disk count is defined as the number of dark/light line pairs that occur per revolution (lines per revolution). As a rule, a second track is added to generate a signal that occurs once per revolution (index signal: QEPI), which can be used to indicate an absolute position. Encoder manufacturers identify the index pulse using different terms such as index, marker, home position, and zero reference.
+
+슬롯의 단일 트랙은 그림 34-1에서 볼 수 있듯이 증분 인코더 디스크의 주변을 패턴으로 만듭니다. 이 슬롯은 어두운 선과 밝은 선의 교대로 패턴을 만듭니다. 디스크 수는 회전 당 발생하는 암흑/경선 쌍의 수(회전 당 선)로 정의됩니다. 일반적으로 절대 위치를 나타내는 데 사용할 수 있는 회전 당 한 번 발생하는 신호를 생성하기 위해 두 번째 트랙이 추가됩니다.(인덱스 신호 : QEPI) 인코더 제조업체는 인덱스, 마커, 홈 위치 및 0 참조와 같은 다른 용어를 사용하여 인덱스 펄스를 식별합니다.
+
+To derive direction information, the lines on the disk are read out by two different photo-elements that "look" at the disk pattern with a mechanical shift of 1/4 the pitch of a line pair between them. This shift is realized with a reticle or mask that restricts the view of the photo-element to the desired part of the disk lines. As the disk rotates, the two photo-elements generate signals that are shifted 90° out of phase from each other. These are commonly called the quadrature QEPA and QEPB signals. The clockwise direction for most encoders is defined as the QEPA channel going positive before the QEPB channel and vise
+versa as shown in Figure 34-2.
+
+방향 정보를 도출하기 위해 디스크의 선은 디스크 패턴을 "보는" 두  개의 다른 사진 요소에 의해 읽혀지며 기계적 이동은 선 쌍의 피치의 1/4입니다. 이 시프트는 사진 요소의 뷰를 디스크 라인의 원하는 부분으로 제한하는 레티클 또는 마스크로 실현됩니다. 디스크가 회전함에 따르 두개의 사진 요소는 서로 위상이 90도 이상 이동하는 신호를 생성합니다. 이들은 일반적으로 직교 QEPA 및 QEPB 신호라고 합니다. 대부분의 인코더의 시계 방향은 QEPB 채널 앞에서 양수로 이동하는 QEPA 채널로 정의되며 그림 34-2에서 볼 수 있듯이 반대로 마찬가지 입니다.
+
+The encoder wheel typically makes one revolution for every revolution of the motor or the wheel may be at a geared rotation ratio with respect to the motor. Therefore, the frequency of the digital signal coming from the QEPA and QEPB outputs varies proportionally with the velocity of the motor. For example, a 2000-line encoder directly coupled to a motor running at 5000 revolutions per minute (rpm) results in a frequency of 166.6 KHz, so by measuring the frequency of either the QEPA or QEPB output, the processor can determine the velocity of the motor.
+
+인코더 휠은 일반적으로 모터의 모든 회전에 대해 하나의 회전을 하거나 휠은 모터와 관련하여 기어드 회전 비율로 있을 수 있습니다. 따라서 QEPA 및 QEPB 출력에서 오는 디지털 신호의 주파수는 모터의 속도에 비례하여 다릅니다. 예를 들어 분당 5000회전 (rpm)으로 작동하는 모터에 직접 결합 된 2000라인 인코더는 166.6khz의 주파수를 발생 시키므로 QEPA 또는 QEPB 출력의 주파수를 측정하여 프로세서가 모터의 속도를 결정할 수 있습니다.
+
+Quadrature encoders from different manufacturers come with two forms of index pulse (gated index pulse or ungated index pulse) as shown in Figure 34-3. A nonstandard form of index pulse is ungated. In the ungated configuration, the index edges are not necessarily coincident with A and B signals. The gatedindex pulse is aligned to any of the four quadrature edges and width of the index pulse and can be equal to a quarter, half, or full period of the quadrature signal.
+
+다른 제조업체의 4차 인코더에는 그림 34-3에 표시된 두 가지 형태의 인덱스 펄스(게이트 인덱스 펄스 또는 유인 인덱스 펄스)가 있습니다. 비표준 형태의 인덱스 펄스가 풀립니다. 유인 구성에서 인덱스 에지는 반드시 A 및 B 신호와 일치하지 않습니다. gated index 펄스는 인덱스 펄스의 4개의 직교 모서리 및 너비 중 하나에 정렬되며 직교 신호의 4분의 1, 절반 또는 전체 주가와 같을 수 있습니다.
+
+Some typical applications of shaft encoders include robotics and even computer input in the form of a mouse. Inside your mouse you can see where the mouse ball spins a pair of axles (a left/right, and an up/down axle). These axles are connected to optical shaft encoders that effectively tell the computer how fast and in what direction the mouse is moving.
+
+샤프트 인코더의 일반적인 응용 프로그램에는 로봇 공학 및 마우스 형태의 컴퓨터 입력도 포함됩니다. 마우스 안에는 마우스 볼이 한 쌍의 차축(왼쪽/오른쪽, 위쪽/아래쪽 차축)을 회전시키는 위치를 볼 수 있다. 이 차축은 광학 샤프트 인코더에 연결되어 컴퓨터에 마우스가 얼마나 빠르고 어느 방향으로 움직이는지 효과적으로 알립니다.
+
+34.2.1 EQEP Inputs
+The eQEP inputs include two pins for quadrature-clock mode or direction-count mode, an index (or 0 marker), and a strobe input.
+
+• QEPA/XCLK and QEPB/XDIR
+These two pins can be used in quadrature-clock mode or direction-count mode.
+
+– Quadrature-clock Mode
+The eQEP encoders provide two square wave signals (A and B) 90 electrical degrees out of phase  whose phase relationship is used to determine the direction of rotation of the input shaft and number of eQEP pulses from the index position to derive the relative position information. For forward or clockwise rotation, QEPA signal leads QEPB signal and vice versa. The quadrature decoder uses these two inputs to generate quadrature-clock and direction signals.
+
+– Direction-count Mode
+In direction-count mode, direction and clock signals are provided directly from the external source.
+Some position encoders have this type of output instead of quadrature output. The QEPA pin provides the clock input and the QEPB pin provides the direction input.
+
+34.2.1 EQEP 입력
+eQEP 입력에는 직교 시계 모드 또는 방향 카운트 모드, 인덱스 (또는 0 마커) 및 스트로브 입력을 위한 두 개의 핀이 포함됩니다.
+
+• QEPA/XCLK 와 QEPB/XDIR
+이 두 핀은 직교 시계 모드 또는 방향 계산 모드에서 사용할 수 있습니다.
+
+-4차시 모드
+eQEP 인코더는 입력 샤프트의 회전 방향과 인덱스 위치에서 eQEP 펄스 수를 결정하여 상대 위치 정보를 유도하는 위상 관계가 사용되는 두 개의 정사각형 파신호(A 및 B) 90 전기적 각도를 제공합니다. 전방 또는 시계 방향 회전의 경우 QEPA 신호는 QEPB 신호를 유도하고 그 반대의 경우도 마찬가지입니다. 직교 디코더는 이 두입력을 사용하여 직교 시계 및 방향 신호를 생성합니다.
+
+- 방향 계산 모드
+방향 계수 보드에서 방향 및 클럭 신호는 외부 소스에서 직접 제공됩니다.
+일부 위치 인코더는 직교 출력 대신 이러한 유형의 출력을 가집니다. QEPA 핀은 클럭 입력을 제공하고 QEPB 핀은 방향 입력을 제공합니다.
+
+• eQEPI: Index or Zero Marker
+The eQEP encoder uses an index signal to assign an absolute start position from which position information is incrementally encoded using quadrature pulses. This pin is connected to the index output of the eQEP encoder to optionally reset the position counter for each revolution. This signal can be used to initialize or latch the position counter on the occurrence of a desired event on the index pin.
+
+• QEPS: Strobe Input
+This general-purpose strobe signal can initialize or latch the position counter on the occurrence of a desired event on the strobe pin. This signal is typically connected to a sensor or limit switch to notify that the motor has reached a defined position.
+
+• eQEPI: 인덱스 또는 제로 마커
+eQEP 인코더는 인덱스 신호를 사용하여 직교 펄스를 사용하여 위치 정보가 점진적으로 인코딩 되는 절대 시작 위치를 할당합니다. 이 핀은 eQEP 인코더의 인덱스 출력에 연결되어 각 회전에 대한 위치 카운터를 선택적으로 재설정합니다. 이 신호는 인덱스 핀에서 원하는 이벤트가 발생하면 위치 카운터를 초기화하거나 걸쇠를 채우는 데 사용 할 수 있습니다.
+
+• QEPS: 스트로브 입력
+이 범용 스트로브 신호는 스트로브 핀에서 원하는 이벤트가 발생하면 위치 카운터를 초기화하거나 걸쇠를 걸 수 있습니다. 이 신호는 일반적으로 센서 또는 제한 스위치에 연결되어 모터가 정의된 위치에 도달했음을 알립니다.
+
+34.2.2.4 eQEP Edge Capture Unit
+The eQEP peripheral includes an integrated edge capture unit to measure the elapsed time between the unit position events as shown in Figure 34-15. This feature is typically used for low speed measurement using the following equation:
+
+34.2.2.4 eQEP 에지 캡처 장치
+eQEP 주변 장치에는 그림 34-15에 표시된 단위 위치 이벤트 간의 경과 시간을 측정하는 통합 에지 캡처 장치가 포함됩니다. 이 기능은 일반적으로 다음 방정식을 사용하여 저속 측정에 사용됩니다.
+
+X - Unit position is defined by integer multiple of quadrature edges (see Figure 34-16)
+• ΔT - Elapsed time between unit position events
+• v(k) - Velocity at time instant "k"
+
+v(k) = X / ( t(k) - t(k-1) ) = X / delta T
+
+X - 단위 위치는 직교 모서리의 정수 배수로 정의됩니다(그림 34-16 참조)
+delta T - 단위 위치 이벤트 간의 경과 시간
+v(k) - 시간 순간 "k"의 속도
+
+
+The eQEP capture timer (QCTMR) runs from prescaled VCLK3 and the prescaler is programmed by the QCAPCTL[CCPS] bits. The capture timer (QCTMR) value is latched into the capture period register (QCPRD) on every unit position event and then the capture timer is reset, a flag is set in QEPSTS:UPEVNT to indicate that new value is latched into the QCPRD register. Software can check this status flag before reading the period register for low speed measurement and clear the flag by writing 1.
+
+Time measurement (ΔT) between unit position events will be correct if the following conditions are met:
+• No more than 65,535 counts have occurred between unit position events.
+• No direction change between unit position events.
+
+eQEP 캡처 타이머(QCTMR)는 사전 스케일 된 VCLK3에서 실행되며 프리스케일러는 QCAPCTL[CCPS] 비트에 의해 프로그래밍됩니다. 캡처 타이머(QCTMR) 값은 모든 단위 위치 이벤트의 캡처 기간 레지스터 (QCPRD)에 래치되고 캡처 타이머가 재설정되고 QEPSTS:UPEVNT에 플래그가 설정되어 새로운 값이 QCPRD 레지스터에 래치됨을 나타냅니다. 소프트웨어는 저속 측정을 위해 기간 레지스터를 일기 전에 이 상태 플래그를 확인하고 1을 작성하여 플래그를 지울 수 있습니다.
+
+다음 조건이 충족되면 단위 위치 이벤트 간의 시간 측정(T)이 정확합니다.
+- 단위 위치 이벤트 사이에 65545 카운트를 넘을 수 없습니다.
+- 단위 위치 이벤트 간 방향 변경 없음.
+
+The capture unit sets the eQEP overflow error flag (QEPSTS[COEF]) in the event of capture timer overflow between unit position events. If a direction change occurs between the unit position events, then an error flag is set in the status register (QEPSTS[CDEF]).
+Capture Timer (QCTMR) and Capture period register (QCPRD) can be configured to latch on following events.
+• CPU read of QPOSCNT register
+• Unit time-out event
+
+캡처 장치는 유닛 위치 이벤트간에 캡처 타이머 오버플로가 발생하는 경우 eQEP 오버플로 오류 플래그(QEPSTS[COEF])를 설정합니다. 단위 위치 이벤트간에 방향 변경이 발생하면 상태 레지스터 (QEPSTS[CDEF])에 오류 플래그가 설정됩니다.
+캡처 타이머(QCTMR)와 캡처 기간 레지스터(QCPRD)는 다음 이벤트에 걸쇠를 달도록 구성할 수 있다.
+- QPOSCNT 레지스터의 CPU 읽기
+- 유닛 타임아웃 이벤트
+
+
+If the QEPCTL[QCLM] bit is cleared, then the capture timer and capture period values are latched into the QCTMRLAT and QCPRDLAT registers, respectively, when the CPU reads the position counter (QPOSCNT).
+
+If the QEPCTL[QCLM] bit is set, then the position counter, capture timer, and capture period values are latched into the QPOSLAT, QCTMRLAT and QCPRDLAT registers, respectively, on unit time out. Figure 34-17 shows the capture unit operation along with the position counter.
+
+QEPCTL[QCLM] 비트가 지워지면 CPU가 위치 카운터(QPOSCNT를 읽을 때 캡처 타이머 및 캡처 기간 값이 각각 QCTMRLAT 및 QCPRDLAT 레지스터에 걸립니다.
+
+QEPCTL[QCLM] 비트가 설정되면 위치 카운터, 캡처 타이머 및 캡처 기간 값이 단위 시간 초과 시 QPOSLAT, QCTMRLAT 및 QCPRDLAT 레지스터에 각각 걸립니다. 그림 34-17은 위치 카운터와 함께 캡처 장치 작업을 보여줍니다.
