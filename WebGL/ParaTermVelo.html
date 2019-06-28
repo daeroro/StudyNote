@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<title>Terminal Velocity</title>
+	<title>Parabolic Terminal Velocity</title>
 	<script type = "text/javascript" src = "jsLibs/three.js"></script>
 	<script type = "text/javascript" src = "jsLibs/stats.js"></script>
 <style>
@@ -59,7 +59,7 @@
 		sphere2.position.z = 2;
 		sphere2.castShadow = true;
 
-		scene.add(sphere2);
+//		scene.add(sphere2);
 
 		camera.position.x = 50;
 		camera.position.y = 350;
@@ -77,11 +77,15 @@
 		document.getElementById("WebGL-output").appendChild(renderer.domElement);
 
 		var step = 0.0;
-		var init_velo = 20.0;
+		var init_velo = 50.0;
+		var init_angle = 60.0;
+		var deg2rad = init_angle * Math.PI / 180.0;
+		var cos = Math.cos(deg2rad);
+		var sin = Math.sin(deg2rad);
 		var init_pos_y = 150.0;
 		var accel = 10.0;
-		var m = 0.5;
-		var b = 0.47 * 1.29 ;
+		var m = 2.0;
+		var b = 0.47;
 		var up = 0.0;	
 
 		renderScene();
@@ -93,7 +97,9 @@
 			step += 0.05;
 			
 			up = b / m * step;
-			sphere1.position.y = init_pos_y -  m * accel / b * (step + m / b * Math.exp(-up) - b / m );
+
+			sphere1.position.x = m / b * ( Math.log(b* init_velo * cos *step + m ) - Math.log(m));
+			sphere1.position.y = init_pos_y;
 			sphere2.position.y = init_pos_y - 0.5 * accel * step * step;
 
 			requestAnimationFrame(renderScene);
