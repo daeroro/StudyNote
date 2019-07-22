@@ -1,0 +1,188 @@
+
+**** Build of configuration Debug for project FreeRTOS_F458 ****
+
+/home/koitt/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
+ 
+Building file: "../source/HL_epc.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_epc.d_raw" --obj_directory="source"  "../source/HL_epc.c"
+Finished building: "../source/HL_epc.c"
+ 
+Building file: "../source/HL_ecap.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_ecap.d_raw" --obj_directory="source"  "../source/HL_ecap.c"
+Finished building: "../source/HL_ecap.c"
+ 
+Building file: "../source/HL_can.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_can.d_raw" --obj_directory="source"  "../source/HL_can.c"
+Finished building: "../source/HL_can.c"
+ 
+Building file: "../source/HL_eqep.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_eqep.d_raw" --obj_directory="source"  "../source/HL_eqep.c"
+Finished building: "../source/HL_eqep.c"
+ 
+Building file: "../source/HL_errata.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata.d_raw" --obj_directory="source"  "../source/HL_errata.c"
+Finished building: "../source/HL_errata.c"
+ 
+Building file: "../source/HL_errata_SSWF021_45.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_errata_SSWF021_45.d_raw" --obj_directory="source"  "../source/HL_errata_SSWF021_45.c"
+Finished building: "../source/HL_errata_SSWF021_45.c"
+ 
+Building file: "../source/HL_esm.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_esm.d_raw" --obj_directory="source"  "../source/HL_esm.c"
+Finished building: "../source/HL_esm.c"
+ 
+Building file: "../source/HL_gio.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_gio.d_raw" --obj_directory="source"  "../source/HL_gio.c"
+Finished building: "../source/HL_gio.c"
+ 
+Building file: "../source/HL_nmpu.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_nmpu.d_raw" --obj_directory="source"  "../source/HL_nmpu.c"
+Finished building: "../source/HL_nmpu.c"
+ 
+Building file: "../source/HL_pinmux.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_pinmux.d_raw" --obj_directory="source"  "../source/HL_pinmux.c"
+Finished building: "../source/HL_pinmux.c"
+ 
+Building file: "../source/HL_notification.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_notification.d_raw" --obj_directory="source"  "../source/HL_notification.c"
+Finished building: "../source/HL_notification.c"
+ 
+Building file: "../source/HL_sys_core.asm"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_core.d_raw" --obj_directory="source"  "../source/HL_sys_core.asm"
+Finished building: "../source/HL_sys_core.asm"
+ 
+Building file: "../source/HL_sys_intvecs.asm"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_intvecs.d_raw" --obj_directory="source"  "../source/HL_sys_intvecs.asm"
+Finished building: "../source/HL_sys_intvecs.asm"
+ 
+Building file: "../source/HL_sci.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sci.d_raw" --obj_directory="source"  "../source/HL_sci.c"
+Finished building: "../source/HL_sci.c"
+ 
+Building file: "../source/HL_etpwm.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_etpwm.d_raw" --obj_directory="source"  "../source/HL_etpwm.c"
+Finished building: "../source/HL_etpwm.c"
+ 
+Building file: "../source/HL_sys_mpu.asm"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_mpu.d_raw" --obj_directory="source"  "../source/HL_sys_mpu.asm"
+Finished building: "../source/HL_sys_mpu.asm"
+ 
+Building file: "../source/HL_sys_dma.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_dma.d_raw" --obj_directory="source"  "../source/HL_sys_dma.c"
+Finished building: "../source/HL_sys_dma.c"
+ 
+Building file: "../source/HL_sys_phantom.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_phantom.d_raw" --obj_directory="source"  "../source/HL_sys_phantom.c"
+Finished building: "../source/HL_sys_phantom.c"
+ 
+Building file: "../source/HL_sys_pmu.asm"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmu.d_raw" --obj_directory="source"  "../source/HL_sys_pmu.asm"
+Finished building: "../source/HL_sys_pmu.asm"
+ 
+Building file: "../source/HL_sys_pmm.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pmm.d_raw" --obj_directory="source"  "../source/HL_sys_pmm.c"
+Finished building: "../source/HL_sys_pmm.c"
+ 
+Building file: "../source/HL_sys_startup.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_startup.d_raw" --obj_directory="source"  "../source/HL_sys_startup.c"
+Finished building: "../source/HL_sys_startup.c"
+ 
+Building file: "../source/HL_sys_pcr.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_pcr.d_raw" --obj_directory="source"  "../source/HL_sys_pcr.c"
+Finished building: "../source/HL_sys_pcr.c"
+ 
+Building file: "../source/HL_sys_main.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_main.d_raw" --obj_directory="source"  "../source/HL_sys_main.c"
+Finished building: "../source/HL_sys_main.c"
+ 
+Building file: "../source/os_croutine.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_croutine.d_raw" --obj_directory="source"  "../source/os_croutine.c"
+Finished building: "../source/os_croutine.c"
+ 
+Building file: "../source/HL_sys_vim.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_sys_vim.d_raw" --obj_directory="source"  "../source/HL_sys_vim.c"
+Finished building: "../source/HL_sys_vim.c"
+ 
+Building file: "../source/os_list.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_list.d_raw" --obj_directory="source"  "../source/os_list.c"
+Finished building: "../source/os_list.c"
+ 
+Building file: "../source/HL_system.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/HL_system.d_raw" --obj_directory="source"  "../source/HL_system.c"
+Finished building: "../source/HL_system.c"
+ 
+Building file: "../source/os_heap.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_heap.d_raw" --obj_directory="source"  "../source/os_heap.c"
+Finished building: "../source/os_heap.c"
+ 
+Building file: "../source/os_portasm.asm"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_portasm.d_raw" --obj_directory="source"  "../source/os_portasm.asm"
+Finished building: "../source/os_portasm.asm"
+ 
+Building file: "../source/os_event_groups.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_event_groups.d_raw" --obj_directory="source"  "../source/os_event_groups.c"
+Finished building: "../source/os_event_groups.c"
+ 
+Building file: "../source/os_port.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_port.d_raw" --obj_directory="source"  "../source/os_port.c"
+Finished building: "../source/os_port.c"
+ 
+Building file: "../source/os_mpu_wrappers.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_mpu_wrappers.d_raw" --obj_directory="source"  "../source/os_mpu_wrappers.c"
+Finished building: "../source/os_mpu_wrappers.c"
+ 
+Building file: "../source/os_timer.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_timer.d_raw" --obj_directory="source"  "../source/os_timer.c"
+Finished building: "../source/os_timer.c"
+ 
+Building file: "../source/os_queue.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_queue.d_raw" --obj_directory="source"  "../source/os_queue.c"
+Finished building: "../source/os_queue.c"
+ 
+Building file: "../source/os_tasks.c"
+Invoking: ARM Compiler
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 --include_path="/home/koitt/Downloads/FreeRTOS_F458" --include_path="/home/koitt/Downloads/FreeRTOS_F458/include" --include_path="/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi --preproc_with_compile --preproc_dependency="source/os_tasks.d_raw" --obj_directory="source"  "../source/os_tasks.c"
+Finished building: "../source/os_tasks.c"
+ 
+Building target: "FreeRTOS_F458.out"
+Invoking: ARM Linker
+"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/bin/armcl" -mv7R5 --code_state=32 --float_support=VFPv3D16 -g --diag_warning=225 --diag_wrap=off --display_error_number --enum_type=packed --abi=eabi -z -m"FreeRTOS_F458.map" --heap_size=0x800 --stack_size=0x800 -i"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/lib" -i"/home/koitt/ti/ccsv8/tools/compiler/ti-cgt-arm_18.1.3.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="FreeRTOS_F458_linkInfo.xml" --rom_model --be32 -o "FreeRTOS_F458.out" "./source/HL_can.obj" "./source/HL_ecap.obj" "./source/HL_epc.obj" "./source/HL_eqep.obj" "./source/HL_errata.obj" "./source/HL_errata_SSWF021_45.obj" "./source/HL_esm.obj" "./source/HL_etpwm.obj" "./source/HL_gio.obj" "./source/HL_nmpu.obj" "./source/HL_notification.obj" "./source/HL_pinmux.obj" "./source/HL_sci.obj" "./source/HL_sys_core.obj" "./source/HL_sys_dma.obj" "./source/HL_sys_intvecs.obj" "./source/HL_sys_main.obj" "./source/HL_sys_mpu.obj" "./source/HL_sys_pcr.obj" "./source/HL_sys_phantom.obj" "./source/HL_sys_pmm.obj" "./source/HL_sys_pmu.obj" "./source/HL_sys_startup.obj" "./source/HL_sys_vim.obj" "./source/HL_system.obj" "./source/os_croutine.obj" "./source/os_event_groups.obj" "./source/os_heap.obj" "./source/os_list.obj" "./source/os_mpu_wrappers.obj" "./source/os_port.obj" "./source/os_portasm.obj" "./source/os_queue.obj" "./source/os_tasks.obj" "./source/os_timer.obj" "../source/HL_sys_link.cmd"  -llibc.a 
+<Linking>
+Finished building target: "FreeRTOS_F458.out"
+ 
+
+**** Build Finished ****

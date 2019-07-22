@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/home/koitt/Downloads/FreeRTOS_F458"/>
+		<item value="/home/koitt/Desktop/git_repo/IntegrationProject/mercenary/can_test"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="com.ti.ccstudio.project.ui.wizards.project.NewCCSProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.ti.common.ui.new"/>
+		</list>
+	</section>
+</section>

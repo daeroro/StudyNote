@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="LaunchTerminalSettingsDialog">
+		<item value="Serial Terminal" key="terminalLabel"/>
+		<section name="SettingsPanelControl">
+			<section name="SSH Terminal">
+				<item value="192.168.0.116" key="lastHost"/>
+				<list key="hosts">
+					<item value="192.168.0.116|ssh.keep_alive:300:ip.port:22:ip.host:192.168.0.116:ssh.user:root:savePassword:false:encoding:null:timeout:0:saveUser:true"/>
+					<item value="192.168.0.117|ssh.keep_alive:300:ip.port:22:ip.host:192.168.0.117:ssh.user:root:savePassword:false:encoding:null:timeout:0:saveUser:true"/>
+					<item value="192.168.0.167|ssh.keep_alive:300:ip.port:22:ip.host:192.168.0.167:savePassword:false:encoding:null:timeout:0:saveUser:false"/>
+					<item value="192.168.0.147|ssh.keep_alive:300:ip.port:22:ip.host:192.168.0.147:ssh.user:root:savePassword:false:encoding:null:timeout:0:saveUser:true"/>
+				</list>
+			</section>
+			<section name="Serial Terminal">
+				<list key="hosts">
+				</list>
+			</section>
+			<section name="Local Terminal">
+			</section>
+		</section>
+	</section>
+</section>
