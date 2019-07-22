@@ -1,2 +1,2 @@
 # workspace
-KOITT3 Project/Lecture Repository
+KOITT3 Lecture  Repository
