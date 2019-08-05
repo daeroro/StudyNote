@@ -7,11 +7,16 @@ typedef struct __queue
 	struct __queue *link;
 } queue;
 
+queue *get_node(void);
+void enqueue(queue **head, int data);
+void dequeue(queue **head, int data);
+void print_queue(queue *head);
+
 queue *get_node(void)
 {
 	queue *tmp;
 	tmp = (queue *)malloc(sizeof(queue));
-	tmp->link = NULL;add
+	tmp->link = NULL;
 	return tmp; 
 }
 
@@ -28,11 +33,11 @@ void enqueue(queue **head, int data)
 
 void print_queue(queue *head)
 {
-	queue *tmp = head;
-	while(head)
+	queue *tmp = tmp;
+	while(tmp)
 	{
-		printf("head->data = %d\n", head->data);
-		head = head->link;
+		printf("head->data = %d\n", tmp->data);
+		tmp = tmp->link;
 	}
 }
 
@@ -70,17 +75,18 @@ int main(void)
 	
 	queue *head = NULL;
 
-	for(i = 0; i < 7; i++)
+	for(i = 0; i < 4; i++)
 		enqueue(&head, (i +1) * 10);
 
 	print_queue(head);
 
 	dequeue(&head, 10);
 	print_queue(head);
+
 	dequeue(&head, 30);
 	print_queue(head);
-	dequeue(&head, 77);
 
+	dequeue(&head, 77);
 	print_queue(head);
 
 	return 0;
