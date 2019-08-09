@@ -1,4 +1,4 @@
 # workspace
 Study Note
-- Self Study Note ([here])
-- KOITT3 Lecture Note ([here])
+- Self Study Note 
+- KOITT3 Lecture Note
