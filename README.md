@@ -1,6 +1,11 @@
 # workspace
 Study Note
 
+### Daero Lee  
+### E-mail Address - skseofh@naver.com 
+
+![daero](./member/daero_lee.png)
+
 - Self Study Note 
   - [[here](https://github.com/daeroro/StudyNote/tree/master/algorithm)] Algorithm
 
