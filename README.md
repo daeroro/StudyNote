@@ -2,7 +2,7 @@
 
 ### Daero Lee's STUDY NOTE
 
-![daero](./me/daero_lee.png)
+![daero](./me/LeeDaeRo.png)
 
 ### E-mail Address - skseofh@naver.com 
 
