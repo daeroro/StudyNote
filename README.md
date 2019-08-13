@@ -1,7 +1,6 @@
 # workspace
-Study Note
 
-### Daero Lee  
+### Daero Lee 's STUDY NOTE
 ### E-mail Address - skseofh@naver.com 
 
 ![daero](./member/daero_lee.png)
