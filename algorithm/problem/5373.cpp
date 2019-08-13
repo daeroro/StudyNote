@@ -5,17 +5,6 @@
 	
 using namespace std;
 
-#define U 7
-#define D 8
-#define F 9
-#define B 10
-#define L 11
-#define R 12
-
-#define cw 13
-#define ccw 14
-
-
 char arrU[10];
 char arrD[10];
 char arrF[10];
@@ -114,10 +103,10 @@ void rotate(char side, char dir)
 				for(i=7; i<=9; i++)
 				{
 					tmp[i] = arrF[i];
-					arrF[i] = arrR[i];
-					arrR[i] = arrB[i];
-					arrB[i] = arrL[i];
-					arrL[i] = tmp[i];
+					arrF[i] = arrL[i];
+					arrL[i] = arrB[i];
+					arrB[i] = arrR[i];
+					arrR[i] = tmp[i];
 				}
 				clockWise(arrD);
 			}
@@ -126,10 +115,10 @@ void rotate(char side, char dir)
 				for(i=7; i<=9; i++)
 				{
 					tmp[i] = arrF[i];
-					arrF[i] = arrL[i];
-					arrL[i] = arrB[i];
-					arrB[i] = arrR[i];
-					arrR[i] = tmp[i];
+					arrF[i] = arrR[i];
+					arrR[i] = arrB[i];
+					arrB[i] = arrL[i];
+					arrL[i] = tmp[i];
 				}
 				counterClockWise(arrD);
 			}
@@ -151,8 +140,8 @@ void rotate(char side, char dir)
 			{
 				tmp[7] = arrU[7]; tmp[8] = arrU[8]; tmp[9] = arrU[9];
 				arrU[7] = arrR[1]; arrU[8] = arrR[4]; arrU[9] = arrR[7];
-				arrR[1] = arrD[7]; arrR[4] = arrD[8]; arrR[7] = arrD[9];
-				arrD[7] = arrL[3]; arrD[8] = arrL[6]; arrD[9] = arrL[9];
+				arrR[1] = arrD[9]; arrR[4] = arrD[8]; arrR[7] = arrD[7];
+				arrD[7] = arrL[9]; arrD[8] = arrL[6]; arrD[9] = arrL[3];
 				arrL[3] = tmp[7]; arrL[6] = tmp[8]; arrL[9] = tmp[9];
 				
 				counterClockWise(arrF);
@@ -177,8 +166,8 @@ void rotate(char side, char dir)
 				tmp[1] = arrU[1]; tmp[2] = arrU[2]; tmp[3] = arrU[3];
 				arrU[1] = arrL[7]; arrU[2] = arrL[4]; arrU[3] = arrL[1];
 				arrL[7] = arrD[3]; arrL[4] = arrD[2]; arrL[1] = arrD[1];
-				arrD[3] = arrR[9]; arrD[2] = arrR[6]; arrD[1] = arrR[3];
-				arrR[9] = tmp[3]; arrR[6] = tmp[2]; arrR[3] = tmp[1];
+				arrD[3] = arrR[3]; arrD[2] = arrR[6]; arrD[1] = arrR[9];
+				arrR[3] = tmp[1]; arrR[6] = tmp[2]; arrR[9] = tmp[3];
 
 				counterClockWise(arrB);
 			}
@@ -188,8 +177,8 @@ void rotate(char side, char dir)
 			if(dir == '+')
 			{
 				tmp[1] = arrU[1]; tmp[4] = arrU[4]; tmp[7] = arrU[7];
-				arrU[1] = arrB[7]; arrU[4] = arrB[4]; arrU[7] = arrB[1];
-				arrB[7] = arrD[7]; arrB[4] = arrD[4]; arrB[1] = arrD[1];
+				arrU[1] = arrB[9]; arrU[4] = arrB[6]; arrU[7] = arrB[3];
+				arrB[9] = arrD[7]; arrB[6] = arrD[4]; arrB[3] = arrD[1];
 				arrD[7] = arrF[1]; arrD[4] = arrF[4]; arrD[1] = arrF[7];
 				arrF[1] = tmp[1]; arrF[4] = tmp[4]; arrF[7] = tmp[7];
 
@@ -201,8 +190,8 @@ void rotate(char side, char dir)
 				tmp[1] = arrU[1]; tmp[4] = arrU[4]; tmp[7] = arrU[7];
 				arrU[1] = arrF[1]; arrU[4] = arrF[4]; arrU[7] = arrF[7];
 				arrF[1] = arrD[7]; arrF[4] = arrD[4]; arrF[7] = arrD[1];
-				arrD[7] = arrB[7]; arrD[4] = arrB[4]; arrD[1] = arrB[1];
-				arrB[7] = tmp[1]; arrB[4] = tmp[4]; arrB[1] = tmp[7];
+				arrD[7] = arrB[9]; arrD[4] = arrB[6]; arrD[1] = arrB[3];
+				arrB[9] = tmp[1]; arrB[6] = tmp[4]; arrB[3] = tmp[7];
 
 				counterClockWise(arrL);
 			}
@@ -214,8 +203,8 @@ void rotate(char side, char dir)
 				tmp[3] = arrU[3]; tmp[6] = arrU[6]; tmp[9] = arrU[9];
 				arrU[3] = arrF[3]; arrU[6] = arrF[6]; arrU[9] = arrF[9];
 				arrF[3] = arrD[9]; arrF[6] = arrD[6]; arrF[9] = arrD[3];
-				arrD[9] = arrB[9]; arrD[6] = arrB[6]; arrD[3] = arrB[3];
-				arrB[9] = tmp[3]; arrB[6] = tmp[6]; arrB[3] = tmp[9];
+				arrD[9] = arrB[7]; arrD[6] = arrB[4]; arrD[3] = arrB[1];
+				arrB[7] = tmp[3]; arrB[4] = tmp[6]; arrB[1] = tmp[9];
 
 				clockWise(arrR);
 
@@ -223,8 +212,8 @@ void rotate(char side, char dir)
 			else if(dir == '-')
 			{
 				tmp[3] = arrU[3]; tmp[6] = arrU[6]; tmp[9] = arrU[9];
-				arrU[3] = arrB[9]; arrU[6] = arrB[6]; arrU[9] = arrB[3];
-				arrB[9] = arrD[9]; arrB[6] = arrD[6]; arrB[3] = arrD[3];
+				arrU[3] = arrB[7]; arrU[6] = arrB[4]; arrU[9] = arrB[1];
+				arrB[7] = arrD[9]; arrB[4] = arrD[6]; arrB[1] = arrD[3];
 				arrD[9] = arrF[3]; arrD[6] = arrF[6]; arrD[3] = arrF[9];
 				arrF[3] = tmp[3]; arrF[6] = tmp[6]; arrF[9] = tmp[9];
 

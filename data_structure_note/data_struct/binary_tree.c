@@ -14,7 +14,7 @@ typedef struct __node
 }node;
 
 node * get_node(void);
-bool insert_tree(node ** top, int value);
+void insert_tree(node ** top, int value);
 int delete_tree(node ** top, int value);
 void find_max(node ** top, int * max);
 node * change_node(node ** top); 
@@ -31,21 +31,40 @@ int main(void)
 	
 	for(i=0; i<7; i++)
 		insert_tree(&top, arr[i]);
-	
+
 	print_preorder(top);
 	printf("\n");
-	/*
+
 	print_inorder(top);
 	printf("\n");
 	
 	print_postorder(top);
 	printf("\n");
-	*/
-	delete_tree(&top, 2);
+
+	//왼쪽 자식만 있는 노드 삭제
+	delete_tree(&top, 3);
+
+	print_preorder(top);
+	printf("\n");
+		
+	//오른쪽 자식만 있는 노드 삭제
+	delete_tree(&top, 1);
 
 	print_preorder(top);
 	printf("\n");
 
+	//왼쪽, 오른쪽 자식 모두 있는 노드 삭제
+	delete_tree(&top, 7);
+
+	print_preorder(top);
+	printf("\n");
+
+	//자식이 없는 노드 삭제
+	delete_tree(&top, 9);
+	
+	print_preorder(top);
+	printf("\n");
+	
 	return 0;
 }
 
@@ -58,7 +77,7 @@ node * get_node(void)
 	return new;
 }
 
-bool insert_tree(node ** top, int value)
+void insert_tree(node ** top, int value)
 {
 	node ** dptr = top;
 
@@ -76,13 +95,11 @@ bool insert_tree(node ** top, int value)
 
 	*dptr = get_node();
 	(*dptr)->value = value;
-
-	return TRUE;
 }
 
 int delete_tree(node ** top, int value)
 {
-	int max;
+	int max, dvalue;
 	node ** dptr = top;
 
 	while(*dptr)
@@ -100,18 +117,24 @@ int delete_tree(node ** top, int value)
 		printf("No matching node\n");
 		return 0;
 	}
-
+	
+	dvalue = (*dptr)->value;
 	printf("delete value = %d\n", (*dptr)->value);
 
-	if((*dptr)->left)
+	if(((*dptr)->left) && ((*dptr)->right))
 	{
 		find_max(&(*dptr)->left, &max);
 		(*dptr)->value = max;
+	}
+	else if((*dptr)->left)
+	{
+		(*dptr) = (*dptr)->left;
 	}
 	else
 	{
 		(*dptr) = (*dptr)->right;
 	}
+	return dvalue;
 }
 
 void find_max(node ** top, int * max)
