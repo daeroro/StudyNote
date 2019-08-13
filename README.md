@@ -2,7 +2,7 @@
 Study Note
 
 - Self Study Note 
-  - Algorithm
+  - [Algorithm](https://github.com/daeroro/StudyNote/tree/master/algorithm)
 
 - KOITT3 Lecture Note
   - x86 asm
