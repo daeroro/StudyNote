@@ -1,9 +1,10 @@
 # STUDY NOTE
 
-### Daero Lee 's STUDY NOTE
-### E-mail Address - skseofh@naver.com 
+### Daero Lee's STUDY NOTE
 
 ![daero](./member/daero_lee.png)
+
+### E-mail Address - skseofh@naver.com 
 
 - Self Study Note 
   - [[here](https://github.com/daeroro/StudyNote/tree/master/algorithm)] Algorithm
