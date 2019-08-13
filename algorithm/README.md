@@ -2,6 +2,6 @@
 
 This is a algorithm study directory.
 
-You can find useful lectures below.
+You can find useful lectures [here](http://blog.naver.com/PostList.nhn?blogId=ndb796&from=postList&categoryNo=128).
 
-http://blog.naver.com/PostList.nhn?blogId=ndb796&from=postList&categoryNo=128
+
