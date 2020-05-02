@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<title>Bullet</title>
+	<script type = "text/javascript" src = "jsLibs/three.js"></script>
+	<script type = "text/javascript" src = "jsLibs/stats.js"></script>
+	<style>
+
+       body {
+                margin: 0;
+                overflow: hidden;        }
+
+	</style>
+<head>
+</head>
+<body>
+	<div id = "WebGL-output">
+	</div>
+	<div id = "Stats-output">
+	</div>
+
+	<script type = "text/javascript">
+	function init(){
+		
+	//	var stats = initStats();
+
+		var scene = new THREE.Scene();
+		var camera = new THREE.PerspectiveCamera(45, window.innerWidth/window.innerHeight, 0.1, 1000);
+		var renderer = new THREE.WebGLRenderer();
+
+		renderer.setClearColorHex();
+		renderer.setClearColor(new THREE.Color(0xEEEEEE));
+		renderer.setSize(window.innerWidth, window.innerHeight);
+
+		var sphereGeometry = new THREE.SphereGeometry(1, 20, 20);
+		var sphereMaterial = new THREE.MeshBasicMaterial({color:0x777777});
+		var sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
+
+		sphere.position.x = 0;
+		sphere.position.y = 0;
+		sphere.position.z = 0;
+
+		scene.add(sphere);
+
+        var sphereGeometry1 = new THREE.SphereGeometry(1, 20, 20)
+         var sphereMaterial1 = new THREE.MeshBasicMaterial({color:0xF44336, wireframe: true});//빨강
+         var sphere1 = new THREE.Mesh(sphereGeometry1, sphereMaterial1);
+ 
+         sphere1.position.x = 20;
+         sphere1.position.y = 0;
+         sphere1.position.z = 0;
+ 
+         scene.add(sphere1);
+
+	        var sphereGeometry2 = new THREE.SphereGeometry(1, 20, 20);
+	        var sphereMaterial2 = new THREE.MeshBasicMaterial({color:0x4A148C})	//보라
+         var sphere2 = new THREE.Mesh(sphereGeometry2, sphereMaterial2);
+ 
+         sphere2.position.x = 0;
+         sphere2.position.y = 20;
+         sphere2.position.z = 0;
+ 
+         scene.add(sphere2);
+
+	     var sphereGeometry3 = new THREE.SphereGeometry(1, 20, 20);
+         var sphereMaterial3 = new THREE.MeshBasicMaterial({color:0xc8fd07});	//형광
+         var sphere3 = new THREE.Mesh(sphereGeometry3, sphereMaterial3);
+ 
+         sphere3.position.x = 0;
+         sphere3.position.y = 0;
+         sphere3.position.z = 20;
+ 
+         scene.add(sphere3);
+
+		var planeGeometry = new THREE.PlaneGeometry(50, 50);
+		var planeMaterial = new THREE.MeshBasicMaterial({color: 0x0c0c0c});
+		var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+
+		plane.position.x = 0;
+		plane.position.y = 0;
+		plane.position.z = 0;
+
+//		scene.add(plane);
+
+//		camera.rotation.x = -2 * Math.PI;
+		camera.position.x = 100;
+		camera.position.y = 100;
+		camera.position.z = 100;
+		camera.lookAt(scene.position);
+
+		document.getElementById("WebGL-output").appendChild(renderer.domElement);
+
+		var step = 0;
+		renderScene();
+
+		function renderScene(){
+			step += 0.9;
+	//		sphere.position.x = 35-step;
+
+			requestAnimationFrame(renderScene);
+			renderer.render(scene, camera);
+		}
+
+		function initStats() {
+			
+			var stats = new Stats();
+
+			stats.setMode(0);
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.left = '0px';
+			stats.domElement.style.top = '0px';
+
+			document.getElementById("Stats-output").appendChild(stats.domElement);
+
+			return stats;
+		}
+	}
+	window.onload = init;
+	</script>
+</body>
+
+</html>
