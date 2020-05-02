@@ -1,8 +1,0 @@
-
-**** Build of configuration Debug for project i2c_mpu6050 ****
-
-/home/koitt/ti/ccsv8/utils/bin/gmake -k -j 4 all -O 
- 
-gmake[1]: 'i2c_mpu6050.out'은(는) 이미 업데이트되었습니다.
-
-**** Build Finished ****
