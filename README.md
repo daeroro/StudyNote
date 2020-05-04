@@ -5,6 +5,20 @@
 ![daero](./me/LeeDaeRo.png)
 
 ### E-mail Address - skseofh@naver.com 
+- Projects
+  - [[here](https://github.com/daeroro/StudyNote/tree/master/Projects/Semi-AutonomousRCCar)]Semi-Autonomous RC Car
+    - Works
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/f458_final.pptx)]Final Presentation(PPT)
+      - [[here]()]TMS570 eQEP(PDF)
+      - [[here]()]TMS570 eQEP(code)
+      - [[here]()]Zybo Z7-10 CAN using PmodCAN(vivado design)
+      - [[here]()]Zybo Z7-10 CAN using PmodCAN(SDK code analysis)
+      - [[here]()]Zybo Z7-10 CAN using PmodCAN(PS_SPI)
+      - [[here]()]Zybo Z7-10 CAN using PmodCAN(PetaLinux)
+      - [[here]()]Zybo Z7-10 PetaLinux Code using PmodCAN
+      - [[here]()]Petalinux Auto Login, Auto Run
+      - [[here]()]FPGA Integration Code
+      - [[here]()]DSP Integration Code
 
 - Self Study Note 
   - [[here](https://github.com/daeroro/StudyNote/tree/master/algorithm)] Algorithm
