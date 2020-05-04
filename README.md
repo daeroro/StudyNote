@@ -6,19 +6,22 @@
 
 ### E-mail Address - skseofh@naver.com 
 - Projects
-  - [[here](https://github.com/daeroro/StudyNote/tree/master/Projects/Semi-AutonomousRCCar)]Semi-Autonomous RC Car
+  - Semi-Autonomous RC Car(https://github.com/daeroro/StudyNote/tree/master/Projects/Semi-AutonomousRCCar)
     - Works
-      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/f458_final.pptx)]Final Presentation(PPT)
-      - [[here]()]TMS570 eQEP(PDF)
-      - [[here]()]TMS570 eQEP(code)
-      - [[here]()]Zybo Z7-10 CAN using PmodCAN(vivado design)
-      - [[here]()]Zybo Z7-10 CAN using PmodCAN(SDK code analysis)
-      - [[here]()]Zybo Z7-10 CAN using PmodCAN(PS_SPI)
-      - [[here]()]Zybo Z7-10 CAN using PmodCAN(PetaLinux)
-      - [[here]()]Zybo Z7-10 PetaLinux Code using PmodCAN
-      - [[here]()]Petalinux Auto Login, Auto Run
-      - [[here]()]FPGA Integration Code
-      - [[here]()]DSP Integration Code
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/f458_final.pptx)] Final Presentation(PPT)
+
+      - [[here]((https://github.com/daeroro/StudyNote/tree/master/Projects/Semi-AutonomousRCCar))] TMS570 eQEP(PDF)
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/MCU/eQEP_test/source/HL_sys_main.c)] TMS570 eQEP(code)
+
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/fpga_PmodCAN(vivado).pdf)] Zybo Z7-10 CAN using PmodCAN(vivado design)
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/fpga_PmodCAN(SDK).pdf)] Zybo Z7-10 CAN using PmodCAN(SDK code analysis)
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/fpga_PmodCAN(PS_SPI).pdf)] Zybo Z7-10 CAN using PmodCAN(PS_SPI)
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/fpga_PmodCAN(petalinux).pdf)] Zybo Z7-10 CAN using PmodCAN(PetaLinux)
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/FPGA/vivado_project/ps_spi/project-spec/meta-user/recipes-apps/ps-spi-app/files/ps-spi-app.c)] Zybo Z7-10 PetaLinux Code using PmodCAN
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/petalinux_autosetting.pdf)] Petalinux Auto Login, Auto Run
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/FPGA/vivado_project/ps-spi-i2c/project-spec/meta-user/recipes-apps/ps-spi-i2c-app/files/ps-spi-i2c-app.c)] FPGA Integration Code
+
+      - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/DSP/dsp_integration.cpp)] DSP Integration Code
 
 - Self Study Note 
   - [[here](https://github.com/daeroro/StudyNote/tree/master/algorithm)] Algorithm
