@@ -21,6 +21,7 @@
 
 - Self Study Note 
   - [[here](https://github.com/daeroro/StudyNote/tree/master/algorithm)] Algorithm
+  - [[here](https://github.com/daeroro/PS)] Problem Solving Repo
   - [[here](https://github.com/daeroro/StudyNote/tree/master/RobotMechanics)] Robot Mechanics
 
 - KOITT3 Lecture Note
