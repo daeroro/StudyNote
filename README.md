@@ -6,11 +6,11 @@
 
 ### E-mail Address - skseofh@naver.com 
 - Projects
-  - Semi-Autonomous RC Car(https://github.com/daeroro/StudyNote/tree/master/Projects/Semi-AutonomousRCCar)
+  - Semi-Autonomous RC Car[](https://github.com/daeroro/StudyNote/tree/master/Projects/Semi-AutonomousRCCar)
     - Works
       - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/f458_final.pptx)] Final Presentation(PPT)
 
-      - [[here]((https://github.com/daeroro/StudyNote/tree/master/Projects/Semi-AutonomousRCCar))] TMS570 eQEP(PDF)
+      - [[here]((https://github.com/daeroro/StudyNote/tree/master/Projects/Semi-AutonomousRCCar)] TMS570 eQEP(PDF)
       - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/MCU/eQEP_test/source/HL_sys_main.c)] TMS570 eQEP(code)
 
       - [[here](https://github.com/daeroro/StudyNote/blob/master/Projects/Semi-AutonomousRCCar/docs/fpga_PmodCAN(vivado).pdf)] Zybo Z7-10 CAN using PmodCAN(vivado design)
