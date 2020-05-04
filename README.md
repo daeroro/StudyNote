@@ -22,6 +22,7 @@
 
 - Self Study Note 
   - [[here](https://github.com/daeroro/StudyNote/tree/master/algorithm)] Algorithm
+  - [[here](https://github.com/daeroro/StudyNote/tree/master/RobotMechanics)] Robot Mechanics
 
 - KOITT3 Lecture Note
   - [[here](https://github.com/daeroro/StudyNote/tree/master/asm_x86_note)] x86 asm 
