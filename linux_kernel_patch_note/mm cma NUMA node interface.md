@@ -1,6 +1,6 @@
 ## mm: cma: NUMA node interface
 
-
+- NUMA 노드에서 cma에 대한 interfaces를 만들어 주는 패치 인것 같다
 
 ```
 I've noticed that there is no interfaces exposed by CMA which would let me
@@ -14,9 +14,7 @@ Implement a new method for declaring contigous memory on particular node
 and keep cma_declare_contiguous() as a wrapper.
 ```
 
-- NUMA 노드에서 cma에 대한 interfaces를 만들어 주는 패치 인것 같다
-
-  
+- nid(node ID)에 대해 적용할 수 있도록 cma_declare_contiguous_nid() 함수를 수정
 
 ```
 intclude/linux/cma.h
@@ -38,7 +36,7 @@ intclude/linux/cma.h
 +}
 ```
 
-- nid(node ID)에 대해 적용할 수 있도록 cma_declare_contiguous_nid() 함수를 수정
+- memblock에서도 nid에 대한 내용을 추가 해줌
 
 ```
 +++ a/include/linux/memblock.h
@@ -49,7 +47,7 @@ intclude/linux/cma.h
 +				      phys_addr_t end, int nid, bool exact_nid);
 ```
 
-* memblock에서도 nid에 대한 내용을 추가 해줌
+* memblock_alloc_range_nid() 함수를 사용하도록 cma_declare_contiguous_nid() 함수를 수정
 
 ```
 --- a/mm/cma.c~mm-cma-numa-node-interface
