@@ -1,0 +1,6 @@
+/* 선택자(selector) : html 안의 태그를 선택 */
+/* div는 생략 가능 */
+div#header-center{
+    margin: 0 auto;
+    width: 1080px;
+}
