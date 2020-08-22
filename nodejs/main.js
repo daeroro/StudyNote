@@ -4,37 +4,38 @@ var url = require('url');
 // http, fs, url -> node js의 모듈
 var qs = require('querystring');
 
-function templateHTML(title, list, body, control){
-  return `
-  <!doctype html>
-  <html>
-  <head>
-    <title>WEB1 - ${title}</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1><a href="/">WEB</a></h1>
-    ${list}
-    ${control}
-    <p>${body}</p>
-  </body>
-  </html>
-  `;
-}
-
-function templateList(filelist)
-{
-  var list = `<ul>`;
-  var i = 0;
-  while(i<filelist.length)
+var template = {
+  list:function(filelist)
   {
-    list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`
-    i = i+1;
+    var list = `<ul>`;
+    var i = 0;
+    while(i<filelist.length)
+    {
+      list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`
+      i = i+1;
+    }
+  
+    list = list + '<ul>';
+  
+    return list;
+  },
+  HTML:function(title, list, body, control){
+    return `
+    <!doctype html>
+    <html>
+    <head>
+      <title>WEB1 - ${title}</title>
+      <meta charset="utf-8">
+    </head>
+    <body>
+      <h1><a href="/">WEB</a></h1>
+      ${list}
+      ${control}
+      <p>${body}</p>
+    </body>
+    </html>
+    `;
   }
-
-  list = list + '<ul>';
-
-  return list;
 }
 
 var app = http.createServer(function(request,response){
@@ -49,12 +50,12 @@ var app = http.createServer(function(request,response){
       fs.readdir(`./data`, function(err, filelist){
         var title = 'Welcome';
         var descriptions = "Hello World";
-        var list = templateList(filelist);
-        var template = templateHTML(title, list, 
+        var list = template.list(filelist);
+        var tmp = template.HTML(title, list, 
           `<h2>${title}</h2>${descriptions}`,
           `<a href="/create">create</a>`);
         response.writeHead(200);
-        response.end(template);
+        response.end(tmp);
       });
     }
     else
@@ -62,8 +63,8 @@ var app = http.createServer(function(request,response){
       fs.readdir(`./data`, function(err, filelist){   
         fs.readFile(`data/${queryData.id}`, 'utf8', function(err, descriptions){
           var title = queryData.id;
-          var list = templateList(filelist);
-          var template = templateHTML(title, list, 
+          var list = template.list(filelist);
+          var tmp = template.HTML(title, list, 
             `<h2>${title}</h2>${descriptions}`,
             `
             <a href="/create">create</a>
@@ -74,7 +75,7 @@ var app = http.createServer(function(request,response){
             </form>          
             `);
           response.writeHead(200);
-          response.end(template);
+          response.end(tmp);
         });
       });
     }
@@ -84,8 +85,8 @@ var app = http.createServer(function(request,response){
     fs.readdir('./data', function(error, filelist)
     {
       var title = 'WEB - create';
-      var list = templateList(filelist);
-      var template = templateHTML(title, list, `
+      var list = template.list(filelist);
+      var tmp = template.HTML(title, list, `
       <form action="/create_process" method="post">
         <p><input type="text" name="title" placeholder="title"></p>
         <p>
@@ -97,7 +98,7 @@ var app = http.createServer(function(request,response){
       </form>
       `, ``);
       response.writeHead(200);
-      response.end(template);
+      response.end(tmp);
     });
   }
   else if(pathname === '/create_process')
@@ -124,8 +125,8 @@ var app = http.createServer(function(request,response){
     {
       fs.readFile(`data/${queryData.id}`, `utf8`, function(err, descriptions){      
       var title = queryData.id;
-      var list = templateList(filelist);
-      var template = templateHTML(title, list, `
+      var list = template.list(filelist);
+      var tmp = template.HTML(title, list, `
       <form action="/update_process" method="post">
 
         <input type="hidden" name="id" value="${title}">
@@ -145,7 +146,7 @@ var app = http.createServer(function(request,response){
        </form>
        `);
       response.writeHead(200);
-      response.end(template);
+      response.end(tmp);
       });
     });
   }
